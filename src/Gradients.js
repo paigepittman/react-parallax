@@ -29,6 +29,7 @@ const Gradients = () => (
                 <stop offset="0%" stopColor="#EDD460" />
                 <stop offset="100%" stopColor="#EDBC39" />
             </linearGradient>
+            
         </defs>
     </svg>
 );

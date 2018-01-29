@@ -90,7 +90,7 @@ const L5 = {
 
 </svg>,
 <svg viewBox="0 0 110 281" height="300" width="300">
-<text className="fill-6" style={{fontSize: "250px", fontFamily:'Fredoka One'}} x="10" y="200">e</text>
+<text className="fill-1" style={{fontSize: "250px", fontFamily:'Fredoka One'}} x="10" y="200">e</text>
 
 </svg>
     ],
