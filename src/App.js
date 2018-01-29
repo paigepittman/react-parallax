@@ -16,7 +16,7 @@ const Title = () => (
 const App = () => (
     <ParallaxProvider>
         <main>
-            {/* <Scroll /> */}
+            <Scroll />
             <Gradients />
             <ParallaxWord />
             <Title />

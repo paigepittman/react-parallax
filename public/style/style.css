@@ -16,9 +16,9 @@ body {
 .scroll {
     position: absolute;
     top: 50vh;
-    left: 50%;
+    left: 0%;
     margin-left: -7rem;
-    width: 14rem;
+    width: 100rem;
     height: auto;
     font-family: Futura, Helvetica, sans-serif;
     font-weight: bold;
@@ -29,9 +29,64 @@ body {
     color: #405D86;
 
     svg {
-        margin: 0 2rem;
+        margin: 0 10rem;
     }
 }
+
+.cloud-1 {
+  position: absolute;
+  top: -50rem;
+  left: 10rem;
+}
+
+.cloud-2 {
+  position: absolute;
+  left: 150rem;
+  top: 50rem;
+}
+
+.cloud-3 {
+  position: absolute;
+  left: 30rem;
+  top: 150rem;
+
+}
+
+.cloud-4 {
+  position: absolute;
+  left: 150rem;
+  top: 260rem;
+
+}
+
+.cloud-5 {
+  position: absolute;
+  left: 10rem;
+  top: 360rem;
+
+}
+
+.cloud-6 {
+  position: absolute;
+  left: 160rem;
+  top: -10rem;
+
+}
+
+.cloud-7 {
+  position: absolute;
+  left: 10rem;
+  top: 100rem;
+
+}
+
+.cloud-8 {
+  position: absolute;
+  left: 130rem;
+  top: 450rem;
+
+}
+
 
 .word {
     display: flex;
