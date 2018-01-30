@@ -22,14 +22,14 @@ const Gradients = () => (
                 <stop offset="100%" stopColor="#EFC15C" />
             </linearGradient>
             <linearGradient id="gradient-5" x1="0" x2="0" y1="0" y2="1">
-                <stop offset="0%" stopColor="#8D63B1" />
+                <stop offset="0%" stopColor="#bf86f1" />
                 <stop offset="100%" stopColor="#8179CB" />
             </linearGradient>
             <linearGradient id="gradient-6" x1="0" x2="0" y1="0" y2="1">
                 <stop offset="0%" stopColor="#EDD460" />
                 <stop offset="100%" stopColor="#EDBC39" />
             </linearGradient>
-            
+
         </defs>
     </svg>
 );

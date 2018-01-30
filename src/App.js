@@ -5,7 +5,8 @@ import Gradients from './Gradients';
 import ParallaxWord from './ParallaxWord';
 import Github from './Github';
 import Fullscreen from './Fullscreen';
-import {Parallax, ParallaxProvider, TweenLite, Power2} from 'react-scroll-parallax';
+import {Parallax, ParallaxProvider} from 'react-scroll-parallax';
+import {TweenLite, Power2} from 'gsap';
 
 const Title = () => (
   <div className="title">
@@ -19,11 +20,12 @@ const App = () => (
             <Scroll />
             <Gradients />
             <ParallaxWord />
-            <Title />
-            {/* <Github /> */}
+            <Title />      
+            <Github />
             {/* <Fullscreen /> */}
         </main>
     </ParallaxProvider>
 );
+
 
 export default App;

@@ -18,7 +18,7 @@ body {
     top: 50vh;
     left: 0%;
     margin-left: -7rem;
-    width: 100rem;
+    width: 100%;
     height: auto;
     font-family: Futura, Helvetica, sans-serif;
     font-weight: bold;
@@ -121,7 +121,7 @@ body {
 .title {
   font-size: 40px;
   text-align: center;
-  color: #8179cb;
+  color: #8179CB;
   width: 100%;
   position: relative;
   top: 15rem;
@@ -185,6 +185,37 @@ body {
         background-image: linear-gradient(to bottom, #405D86 0%, #384257 100%);
     }
 }
+.arrow {
+  position: absolute;
+  margin: 0 auto;
+  left: 45%;
+  top: 30rem;
+}
+
+.projects-div {
+  position: absolute;
+  margin-top: 250rem;
+  display: inline-flex;
+  width: 100%;
+  overflow: hidden;
+
+
+}
+
+.project-box {
+  width: 30rem;
+  margin: 5rem;
+}
+
+.project-title {
+  font-size: 30px;
+}
+
+.project-blur {
+  font-size: 30px;
+}
+
+
 
 .fullscreen {
     position: fixed;

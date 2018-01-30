@@ -14,7 +14,6 @@
  import {TweenLite, Power2} from 'gsap';
 
 const getRandomInt = (min, max) => {
-    console.log(ParallaxProvider)
     return Math.floor(Math.random() * (max - min + 1)) + min;
 };
 
@@ -25,7 +24,7 @@ const run = () => {
     const scrollAnimation = { scrollTop: 0 };
     const scrollTop = document.body.clientHeight / 2 - window.innerHeight / 2;
 
-    const tween = TweenLite.to(scrollAnimation, 2, {
+    const tween = TweenLite.to(scrollAnimation, 3, {
         scrollTop: scrollTop,
         ease: Power2.easeInOut,
         onUpdate: () => {
@@ -38,14 +37,17 @@ const run = () => {
         window.removeEventListener('mousewheel', mouseHandler, false);
     }, false);
 
+
+
 }
 run();
 
 
 class Letter extends React.Component {
     render() {
-      console.log(this.props.letter)
+console.log(document.getElementById('cloud-1'))
         const { letter } = this.props;
+        console.log(letter)
         const offset = getRandomInt(60, 200);
         const isSlower = getRandomInt(0, 1) ? true : false;
         return (
