@@ -195,24 +195,30 @@ body {
 .projects-div {
   position: absolute;
   margin-top: 250rem;
-  display: inline-flex;
+  display: inline-grid;
   width: 100%;
-  overflow: hidden;
-
+  height: 500rem;
 
 }
+
 
 .project-box {
-  width: 30rem;
-  margin: 5rem;
+  width: 100%;
+  float: left;
+  font-size: 20px;
 }
+
 
 .project-title {
   font-size: 30px;
 }
 
 .project-blur {
-  font-size: 30px;
+  font-size: 14px;
+}
+
+.project-image {
+  width: 300px;
 }
 
 
