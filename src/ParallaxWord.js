@@ -1,4 +1,5 @@
 import React from 'react';
+import {TweenLite, Power2} from 'gsap';
 import Letter from './Para';
 
 const P1 = {
@@ -96,6 +97,27 @@ const L5 = {
     ],
 };
 
+const scroller = () => {
+
+    const scrollAnimation = { scrollTop: window.pageYOffset };
+    const scrollTop = document.getElementById("projects-scroll").offsetTop;
+
+    const tween = TweenLite.to(scrollAnimation, 3, {
+        scrollTop: scrollTop,
+        ease: Power2.easeInOut,
+        onUpdate: () => {
+            window.scrollTo(0, scrollAnimation.scrollTop);
+        }
+    });
+
+    window.addEventListener('mousewheel', function mouseHandler() {
+        tween.kill();
+        window.removeEventListener('mousewheel', mouseHandler, false);
+    }, false);
+
+
+
+}
 
 
 const word = [P1, A2, R3, A4, L5];
@@ -105,7 +127,12 @@ const ParallaxWord = () => (
         {word.map((X, i) =>
             <Letter key={i} letter={X} />
         )}
-    </div>
+
+          <svg className="arrow-2" viewBox="0 0 400 500" height="300" width="400" onClick={scroller}>
+            <rect className="fill-3" width="40" height="80" stroke-width="3" stroke="none" />
+            <polygon className="fill-6" points="-35,80 74,80 20,150" stroke-width="3" stroke="none" />
+          </svg>
+  </div>
 );
 
 export default ParallaxWord;

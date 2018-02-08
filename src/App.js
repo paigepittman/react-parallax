@@ -14,13 +14,20 @@ const Title = () => (
   </div>
 )
 
+const ProjectsTitle = () => (
+  <div className="projects-title" id="projects-scroll">
+    Projects
+  </div>
+)
+
 const App = () => (
     <ParallaxProvider>
         <main>
             <Scroll />
             <Gradients />
             <ParallaxWord />
-            <Title />      
+            <Title />
+            <ProjectsTitle />
             <Github />
             {/* <Fullscreen /> */}
         </main>

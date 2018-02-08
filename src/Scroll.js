@@ -14,12 +14,6 @@ class Scroll extends Component {
 
     }
 
-    // componentDidMount() {
-    //   let cloud1 = document.getElementById('cloud-1');
-    //   TweenLite.fromTo(cloud1, 4, {x: '-=00px'}, {x: 200, ease:Power2.easeInOut});
-    // }
-
-
 
   render() {
 
@@ -132,8 +126,8 @@ class Scroll extends Component {
               <path d="M 100 300 q 150 -325 290 0 " stroke="white" stroke-width="5" fill="white" />
               <path d="M 200 300 q 250 -230 255 0" stroke="white" stroke-width="5" fill="white" />
               <path d="M 7 300 l 450 0" stroke="white" stroke-width="5" fill="white" />
-
             </svg>
+            
           </Parallax>
 
         </div>
