@@ -2,7 +2,7 @@
   "name": "parallax",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://paigepittman.github.io",
+  "homepage": "https://paigepittman.github.io/react-parallax",
   "dependencies": {
     "gh-pages": "^1.1.0",
     "gsap": "^1.20.3",
