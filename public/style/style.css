@@ -98,6 +98,8 @@ body {
 .letter {
     position: relative;
     margin: 0 4.8rem;
+    font-size: 250px;
+    font-family:'Fredoka One';
     &:first-of-type {
         margin-right: -2rem; // P/A kerning
     }
@@ -294,11 +296,11 @@ body {
 } */
 
 #doggo {
-  height: 227px;
-position: relative;
-bottom: -100px;
-left: 88px;
-transform: rotate(-0.04turn);
+      height: 227px;
+      position: relative;
+      bottom: -119px;
+      left: 111px;
+      transform: rotate(-0.09turn);
 }
 
 .easter-egg {
@@ -315,15 +317,120 @@ transform: rotate(-0.04turn);
     }
 
 #bitmoji {
+  position: relative;
   height: 350px;
-position: relative;
-bottom: -32px;
+  bottom: -32px;
+}
+
+div#github-btn  {
+
+font-size: 100px;
+position: absolute;
+bottom: 100rem;
+left: 25rem;
+color: #967cd8;
+width: 40rem;
+text-align: center;
+
+}
+
+div#linkdin-btn  {
+
+font-size: 100px;
+position: absolute;
+bottom: 100rem;
+left: 125rem;
+color: #967cd8;
+width: 40rem;
+text-align: center;
+
+
+
+}
+
+#linkdin-btn a, #linkdin-btn:hover a, #github-btn:hover a, #github-btn a {
+  color: white;
+}
+
+
+div#github-btn:hover, div#linkdin-btn:hover {
+  font-size: 120px;
+  cursor: pointer;
+  background: linear-gradient(#e3c8f9, #967cd8);
+  color: white;
+  border-radius: 7px;
 }
 
 
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 770px) {
     body {
-        background-color: lightblue;
+        position: relative;
+        left: 15%;
+        height: 3000rem;
+    }
+
+    .letter text {
+      font-size: 150px;
+
+    }
+    .letter {
+      margin: 0px 15.8rem 0rem;
+    }
+
+    .word {
+      margin-left: -7%;
+    }
+
+    .title {
+          top: 111rem;
+          margin-left: 11%;
+    }
+
+    .arrow-2 {
+      top: 1708rem;
+    }
+    #projects-scroll {
+      left: 15%;
+      margin-top: 280rem;
+    }
+
+    .projects-div {
+      margin-left: 13%;
+      margin-top: 363rem;
+    }
+
+    .project-box {
+      height: 172rem;
+      margin: 24px 0 0 23%;
+    }
+
+
+    #doggo {
+      height: 227px;
+    position: relative;
+    bottom: -469px;
+    left: 15px;
+    transform: rotate(-0.04turn);
+    }
+
+    .easter-egg {
+      position: absolute;
+      width: 131%;
+      left: 2%;
+      overflow: visible;
+      overflow-y: hidden;
+      background: #ff99d7;
+      border-bottom: none;
+      border-color: #ff99d700;
+      border-radius: 500px 500px 0 0;
+      -webkit-box-shadow: 0px 0px 65px 65px #ff99d7;
+        }
+
+    #bitmoji {
+      height: 350px;
+      position: relative;
+      bottom: -32px;
+      left: 130px;
     }
 }

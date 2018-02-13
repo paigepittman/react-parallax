@@ -27,7 +27,7 @@ const renderDetails = (id) => {
 const scroller = () => {
 
     const scrollAnimation = { scrollTop: window.pageYOffset };
-    const scrollTop = document.getElementById("projects-scroll").offsetTop;
+    const scrollTop = document.getElementById("github-btn").offsetTop;
 
     const tween = TweenLite.to(scrollAnimation, 3, {
         scrollTop: scrollTop,
