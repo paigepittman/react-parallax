@@ -189,7 +189,7 @@ body {
 .arrow {
   position: absolute;
   margin: 0 auto;
-  left: 45%;
+  left: 50%;
   top: 30rem;
 }
 
@@ -277,7 +277,7 @@ body {
 
 
 
-.fullscreen {
+/* .fullscreen {
     position: fixed;
     width: 32px;
     height: 32px;
@@ -290,5 +290,40 @@ body {
         svg {
             fill: url(#gradient-2);
         }
+    }
+} */
+
+#doggo {
+  height: 227px;
+position: relative;
+bottom: -100px;
+left: 88px;
+transform: rotate(-0.04turn);
+}
+
+.easter-egg {
+  position: absolute;
+      bottom: 0;
+      left: 40%;
+      overflow: hidden;
+      background: #ff99d7;
+      border-bottom: none;
+      border-color: #ff99d700;
+      border-radius: 500px 500px 0 0;
+      box-shadow: 0, 0,;
+      -webkit-box-shadow: 0px 0px 50px 35px #ff99d7;
+    }
+
+#bitmoji {
+  height: 350px;
+position: relative;
+bottom: -32px;
+}
+
+
+
+@media only screen and (max-width: 500px) {
+    body {
+        background-color: lightblue;
     }
 }

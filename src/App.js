@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import Para from './Para';
 import Scroll from './Scroll';
 import Gradients from './Gradients';
 import ParallaxWord from './ParallaxWord';
 import Github from './Github';
-import Fullscreen from './Fullscreen';
+import Connect from './Connect';
 import {Parallax, ParallaxProvider} from 'react-scroll-parallax';
 import {TweenLite, Power2} from 'gsap';
 
@@ -29,7 +28,7 @@ const App = () => (
             <Title />
             <ProjectsTitle />
             <Github />
-            {/* <Fullscreen /> */}
+            <Connect />
         </main>
     </ParallaxProvider>
 );
