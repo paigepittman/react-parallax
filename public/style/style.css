@@ -370,6 +370,10 @@ div#github-btn:hover, div#linkdin-btn:hover {
         height: 3000rem;
     }
 
+    .arrow-3 {
+      visibility: hidden;
+    }
+
     .letter text {
       font-size: 150px;
 
@@ -420,11 +424,11 @@ div#github-btn:hover, div#linkdin-btn:hover {
       left: 2%;
       overflow: visible;
       overflow-y: hidden;
-      background: #ff99d7;
+      background: none;
       border-bottom: none;
-      border-color: #ff99d700;
-      border-radius: 500px 500px 0 0;
-      -webkit-box-shadow: 0px 0px 65px 65px #ff99d7;
+      border-color: none;
+      border-radius: 0 0 0 0;
+      -webkit-box-shadow: 0px 0px 0 0 #ff99d7;
         }
 
     #bitmoji {
@@ -432,5 +436,32 @@ div#github-btn:hover, div#linkdin-btn:hover {
       position: relative;
       bottom: -32px;
       left: 130px;
+    }
+
+
+    div#github-btn  {
+
+    font-size: 100px;
+    position: absolute;
+    bottom: 179rem;
+    left: 56rem;
+    color: #967cd8;
+    width: 40rem;
+    text-align: center;
+
+    }
+
+    div#linkdin-btn  {
+
+    font-size: 100px;
+    position: absolute;
+    bottom: 184rem;
+    left: 145rem;
+    color: #967cd8;
+    width: 40rem;
+    text-align: center;
+
+
+
     }
 }
