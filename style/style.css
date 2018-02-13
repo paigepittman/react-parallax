@@ -1,0 +1,436 @@
+html {
+    font-size: 0.5vw;
+    overflow-x: hidden;
+}
+
+body {
+    position: relative;
+    background-color: linear-gradient(to bottom, #8ce2f9 40%, rgba(249, 116, 41, 0.3) 60%, #100e34 100%);;
+    background-image: linear-gradient(to bottom, #8ce2f9 40%, rgba(249, 116, 41, 0.3) 60%, #100e34 100%);
+    height: 1500rem;
+    min-height: 300vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scroll {
+    position: absolute;
+    top: 50vh;
+    left: 0%;
+    margin-left: -7rem;
+    width: 100%;
+    height: auto;
+    font-family: Futura, Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.3rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: #405D86;
+
+    svg {
+        margin: 0 10rem;
+    }
+}
+
+.cloud-1 {
+  position: absolute;
+  top: -50rem;
+  left: 10rem;
+}
+
+.cloud-2 {
+  position: absolute;
+  left: 150rem;
+  top: 50rem;
+}
+
+.cloud-3 {
+  position: absolute;
+  left: 30rem;
+  top: 150rem;
+
+}
+
+.cloud-4 {
+  position: absolute;
+  left: 150rem;
+  top: 260rem;
+
+}
+
+.cloud-5 {
+  position: absolute;
+  left: 10rem;
+  top: 360rem;
+
+}
+
+.cloud-6 {
+  position: absolute;
+  left: 160rem;
+  top: -10rem;
+
+}
+
+.cloud-7 {
+  position: absolute;
+  left: 10rem;
+  top: 100rem;
+
+}
+
+.cloud-8 {
+  position: absolute;
+  left: 130rem;
+  top: 450rem;
+
+}
+
+
+.word {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.letter {
+    position: relative;
+    margin: 0 4.8rem;
+    font-size: 250px;
+    font-family:'Fredoka One';
+    &:first-of-type {
+        margin-right: -2rem; // P/A kerning
+    }
+}
+
+.form {
+    position: absolute;
+    top: 0;
+    left: -16rem;
+    width: 100%;
+    height: 100%;
+
+    svg {
+        display: block;
+        width: 100%;
+        height: auto;
+
+        // background-color: rgba(salmon, 0.2);
+    }
+}
+
+.title {
+  font-size: 40px;
+  text-align: center;
+  color: #8179CB;
+  width: 100%;
+  position: relative;
+  top: 15rem;
+  font-family: 'Chewy', cursive;
+  z-index: -1;
+  /* font-family: 'Lato', sans-serif; */
+}
+
+.fill-1 {
+    fill: url(#gradient-2); // #405D86;
+}
+
+.fill-2 {
+    fill: url(#gradient-6);
+}
+
+.fill-3 {
+    fill: url(#gradient-3); // #ED6088;
+}
+
+.fill-4 {
+    fill: url(#gradient-1); // #6ED0DD
+}
+
+.fill-5 {
+    fill: url(#gradient-4);
+}
+
+.fill-6 {
+    fill: url(#gradient-5);
+}
+
+.hidden {
+    position: absolute;
+    top: -1000rem;
+    left: -1000rem;
+    width: 0;
+    height: 0;
+}
+
+.button {
+    position: absolute;
+    width: 24rem;
+    height: 10rem;
+    bottom: 50vh;
+    left: 50%;
+    margin-left: -12rem;
+
+    font-family: Futura, Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.3rem;
+    text-align: center;
+    line-height: 10rem;
+    text-transform: uppercase;
+    font-size: 3rem;
+    text-decoration: none;
+    background-image: linear-gradient(to bottom, #8D63B1 0%, #8179CB 100%);
+    color: #ffffff;
+
+    &:hover {
+        background-image: linear-gradient(to bottom, #405D86 0%, #384257 100%);
+    }
+}
+.arrow {
+  position: absolute;
+  margin: 0 auto;
+  left: 50%;
+  top: 30rem;
+}
+
+.arrow-2 {
+  position: absolute;
+  top: 800rem;
+  left: 45%;
+
+}
+
+.arrow-3 {
+  position: absolute;
+  top: 8rem;
+  left: 26%;
+
+}
+
+#projects-scroll {
+  position: absolute;
+  left: 35%;
+  margin-top: 199rem;
+  font-size: 100px;
+  font-family: "Fredoka One";
+  color: #8178cb;
+}
+
+.projects-div {
+  position: absolute;
+  margin-left: 10%;
+  margin-top: 250rem;
+  display: inline-grid;
+  width: 100%;
+  height: 100rem;
+
+}
+
+
+.project-box {
+  width: 100%;
+  height: 50rem;
+  float: left;
+  font-size: 20px;
+  background: rgba(242, 249, 245, 0);
+}
+
+
+.project-title {
+  font-size: 30px;
+}
+
+.card {
+  height: 100%;
+  margin: .5rem 1rem 1rem 0;
+  border-radius: 15px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 14px;
+  color: white;
+  overflow: auto;
+
+}
+
+.card-image {
+  border-style: solid;
+  border-radius: 15px;
+}
+
+.card .card-reveal {
+  background-color: rgba(0,0,0,0.7);
+}
+
+.card .card-reveal .card-title  {
+  visibility: hidden;
+}
+
+.card .card-reveal i  {
+  visibility: visible;
+  color: white;
+}
+
+
+
+.project-image {
+  width: 300px;
+}
+
+
+
+/* .fullscreen {
+    position: fixed;
+    width: 32px;
+    height: 32px;
+    bottom: 20px;
+    right: 20px;
+    svg {
+        fill: url(#gradient-5);
+    }
+    &:hover {
+        svg {
+            fill: url(#gradient-2);
+        }
+    }
+} */
+
+#doggo {
+      height: 227px;
+      position: relative;
+      bottom: -119px;
+      left: 111px;
+      transform: rotate(-0.09turn);
+}
+
+.easter-egg {
+  position: absolute;
+      bottom: 0;
+      left: 40%;
+      overflow: hidden;
+      background: #ff99d7;
+      border-bottom: none;
+      border-color: #ff99d700;
+      border-radius: 500px 500px 0 0;
+      box-shadow: 0, 0,;
+      -webkit-box-shadow: 0px 0px 50px 35px #ff99d7;
+    }
+
+#bitmoji {
+  position: relative;
+  height: 350px;
+  bottom: -32px;
+}
+
+div#github-btn  {
+
+font-size: 100px;
+position: absolute;
+bottom: 100rem;
+left: 25rem;
+color: #967cd8;
+width: 40rem;
+text-align: center;
+
+}
+
+div#linkdin-btn  {
+
+font-size: 100px;
+position: absolute;
+bottom: 100rem;
+left: 125rem;
+color: #967cd8;
+width: 40rem;
+text-align: center;
+
+
+
+}
+
+#linkdin-btn a, #linkdin-btn:hover a, #github-btn:hover a, #github-btn a {
+  color: white;
+}
+
+
+div#github-btn:hover, div#linkdin-btn:hover {
+  font-size: 120px;
+  cursor: pointer;
+  background: linear-gradient(#e3c8f9, #967cd8);
+  color: white;
+  border-radius: 7px;
+}
+
+
+
+@media only screen and (max-width: 770px) {
+    body {
+        position: relative;
+        left: 15%;
+        height: 3000rem;
+    }
+
+    .letter text {
+      font-size: 150px;
+
+    }
+    .letter {
+      margin: 0px 15.8rem 0rem;
+    }
+
+    .word {
+      margin-left: -7%;
+    }
+
+    .title {
+          top: 111rem;
+          margin-left: 11%;
+    }
+
+    .arrow-2 {
+      top: 1708rem;
+    }
+    #projects-scroll {
+      left: 15%;
+      margin-top: 280rem;
+    }
+
+    .projects-div {
+      margin-left: 13%;
+      margin-top: 363rem;
+    }
+
+    .project-box {
+      height: 172rem;
+      margin: 24px 0 0 23%;
+    }
+
+
+    #doggo {
+      height: 227px;
+    position: relative;
+    bottom: -469px;
+    left: 15px;
+    transform: rotate(-0.04turn);
+    }
+
+    .easter-egg {
+      position: absolute;
+      width: 131%;
+      left: 2%;
+      overflow: visible;
+      overflow-y: hidden;
+      background: #ff99d7;
+      border-bottom: none;
+      border-color: #ff99d700;
+      border-radius: 500px 500px 0 0;
+      -webkit-box-shadow: 0px 0px 65px 65px #ff99d7;
+        }
+
+    #bitmoji {
+      height: 350px;
+      position: relative;
+      bottom: -32px;
+      left: 130px;
+    }
+}
